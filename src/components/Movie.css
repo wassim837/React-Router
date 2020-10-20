@@ -1,0 +1,254 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+  background-color: currentcolor;}
+.wrapper {
+  margin: 0;
+  padding: 10;
+}
+header {
+  padding: 20px 20px 20px 20px;
+  position: fixed;
+  top: 0;
+  display: grid;  
+  grid-gap:5px;
+  grid-template-columns: 1fr 4fr 1fr ;
+  grid-template-areas: 
+  "nt mn mn sr st sb . . . "; 
+  background-color: black;
+  width: 100%;
+  margin-bottom: 0px;  
+  z-index: 3000;
+  color: aliceblue;
+}
+
+.Logo {
+  grid-area: nt;
+  object-fit: cover;
+  width: 100px;
+  max-height: 100%;
+  padding-left: 30px;
+  padding-top: 0px;  
+}
+.main-nav {
+  grid-area: mn;
+  padding: 0 30px 0 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  margin: 50px; 
+  font-size: 30px; 
+  color: whitesmoke;
+}
+
+.main-nav a:hover {
+  color: #686868;
+}
+
+.sub-nav {
+  grid-area: sb;
+  padding: 0 40px 0 40px;
+}
+
+.sub-nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 5px;
+}
+
+.sub-nav a:hover {
+  color: #686868;
+}
+.search-title {
+  text-decoration: none;
+}
+.main-container {
+  padding: 50px;
+  margin-top: 50px;
+  min-height: calc(100vh - 70px);
+}
+
+.card {
+  border: 1px solid rgba(0,0,0,.03);
+  border-radius: 6px;
+  width: 180px;
+  color: #747474;
+  box-shadow: 0 0px 30px 0 rgba(0,0,0,.1);
+  background-color: #141414;
+  box-sizing: border-box;
+}
+
+.title {
+  margin:5px ;
+  color: #F3F3F3;
+}
+
+.date {
+  margin:5px ;
+  color: #686868;
+}
+.rating {
+  margin:5px ;
+  color: gold;
+}
+
+button {
+  font-size: 100px;
+  align-items: inherit;
+}
+
+.link {
+  padding: 50px;
+}
+
+.sub-links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-links a {
+  color: #686868;
+  text-decoration: none;
+}
+.rating span:hover{
+  color: gold;
+}
+.sub-links a:hover {
+  color: #686868;
+  text-decoration: underline;
+}
+.search {
+  font-size: 15px;
+  border-radius:5px;
+}.list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, minmax(200px, 1fr));
+}
+.list a {
+  transition: transform .3s;  
+  text-decoration: none;
+}
+.modal {
+  z-index: 1;
+  position: fixed;
+  height: fit-content;
+  width: 460px;
+  background-color: darkseagreen;
+  padding: 40px 80px 50px;
+  top: 15%;
+  left: 80%;
+  margin-left: -230px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  flex-flow: column nowrap;
+}
+.modal input {
+  width: 300px;
+  height: 30px;
+}
+.modal p {
+  margin: 10px 0;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+[type=button] {
+  border: outset;
+  width: 30% !important;
+  align-self: flex-start;
+  margin: 25px;
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+ .copyright-text{
+   color: whitesmoke;
+  bottom: 100%; 
+}
+
+footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-top-style: groove;
+background-color: rgb(48, 49, 53);
+}
+
+
